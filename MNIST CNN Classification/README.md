@@ -1,119 +1,80 @@
-🧠 MNIST Digit Classification using Convolutional Neural Networks (CNN)
+# 🧠 MNIST CNN Classification
 
-This project presents an end-to-end implementation of a Convolutional Neural Network (CNN) for classifying handwritten digits (0–9) using the MNIST dataset.
-The model is built using TensorFlow/Keras and achieves high accuracy with strong generalization performance.
+This project implements a **Convolutional Neural Network (CNN)** to classify handwritten digits using the **MNIST dataset**. The model is built and trained using **TensorFlow / Keras** and executed in **Google Colab**.
 
-📌 Project Overview
+---
 
-Handwritten digit recognition is a classic problem in computer vision and deep learning.
-In this project, a CNN model is designed, trained, and evaluated to accurately classify digits from grayscale images of size 28×28.
+## 📌 Project Overview
 
-The project covers the complete workflow:
+The goal of this project is to build a deep learning model capable of recognizing handwritten digits (0–9) from grayscale images of size **28×28 pixels**. The project demonstrates the practical use of CNNs for image classification tasks.
 
-Data loading and preprocessing
+---
 
-CNN architecture design
+## 🗂️ Repository Contents
 
-Model training and regularization
+* `MNIST_CNN.ipynb` : A Jupyter Notebook containing all steps of the project, from data loading to model evaluation.
 
-Performance evaluation
+---
 
-Visualization of results
+## 🛠️ Tools & Technologies
 
-🚀 Key Features
+* Python
+* Google Colab
+* NumPy
+* Matplotlib
+* TensorFlow / Keras
 
-Data normalization and reshaping
+---
 
-CNN architecture with convolution, pooling, and dropout layers
+## 🚀 Notebook Workflow
 
-Early stopping to prevent overfitting
+1. **Import required libraries**.
+2. **Load and preprocess the MNIST dataset** (reshaping images and normalizing pixel values).
+3. **Build the CNN model** using layers such as:
 
-Model checkpointing (saving best model)
+   * Conv2D
+   * MaxPooling
+   * Dropout
+   * Dense
+4. **Compile the model** with an appropriate optimizer and loss function.
+5. **Train the model**, applying Early Stopping to prevent overfitting.
+6. **Evaluate the model** on test data.
+7. **Visualize results**, including accuracy and performance metrics.
 
-Confusion matrix visualization
+---
 
-Sample prediction visualization
+## ▶️ How to Run
 
-Clean and modular project structure
+1. Open the file `MNIST_CNN.ipynb`.
+2. Click **Open in Colab**.
+3. From the top menu, select:
 
-🧠 Model Architecture
+   * `Runtime` → `Run all`
+4. Wait for the model to train and display the results.
 
-The CNN architecture consists of:
+---
 
-Conv2D (32 filters) with ReLU activation
+## 📊 Results
 
-Conv2D (64 filters) with ReLU activation
+The trained CNN achieves high accuracy on the MNIST test set, demonstrating the effectiveness of convolutional neural networks in image classification tasks.
 
-MaxPooling2D for spatial downsampling
+---
 
-Dropout for regularization
+## 🎯 Learning Objectives
 
-Fully Connected (Dense) layers
+* Understand the structure and workflow of CNNs.
+* Apply deep learning techniques to image classification problems.
+* Gain hands-on experience using Keras in Google Colab.
 
-Softmax output layer for multi-class classification
+---
 
-This design allows the model to extract low-level and high-level features efficiently.
+## 📜 License
 
-📊 Model Performance
-Metric	Value
-Training Accuracy	~98.9%
-Validation Accuracy	~99.0%
-Test Accuracy	~98.88%
-Test Loss	~0.033
+This project is intended for educational purposes and is free to use and modify.
 
-The model demonstrates excellent generalization with no significant overfitting.
+---
 
-📂 Project Structure
-mnist-cnn-digit-classification/
-│
-├── model/
-│   └── mnist_cnn_model.h5
-│
-├── src/
-│   └── train.py
-│
-├── examples/
-│   ├── confusion_matrix.png
-│   └── sample_predictions.png
-│
-├── README.md
-└── requirements.txt
+## 👩‍💻 Author
 
-▶️ How to Run the Project
-1️⃣ Install dependencies
-pip install -r requirements.txt
-
-2️⃣ Train the model
-python src/train.py
-
-
-The trained model will be saved in the model/ directory and evaluation figures will be stored in examples/.
-
-🛠️ Technologies Used
-
-Python
-
-TensorFlow / Keras
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-🎯 Future Improvements
-
-Data augmentation for improved robustness
-
-Batch normalization layers
-
-Hyperparameter tuning
-
-Deployment using a web interface (Streamlit or Flask)
-
-✨ Author
-
-Developed by Doaa Brnawi
-Deep Learning Projects Repository
+**Duaa Barnawi**
+Specialization: Artificial Intelligence 🤖
